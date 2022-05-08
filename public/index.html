@@ -29,8 +29,8 @@
 
         <v-tooltip bottom>
           <template v-slot:activator="{ on }">
-            <v-btn icon @click="show = !show" v-on="on">
-              <v-icon v-model="isDark" @click="isDark = !isDark">{{ show ? 'check_circle' : 'check_circle_outline' }}
+            <v-btn icon v-on="on">
+              <v-icon v-model="isDark" @click="isDark = !isDark; show = !show">{{ show ? 'check_circle' : 'check_circle_outline' }}
               </v-icon>
             </v-btn>
           </template>
