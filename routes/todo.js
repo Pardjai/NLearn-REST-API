@@ -1,9 +1,10 @@
 const {Router} = require('express')
+const Todo = require('../models/todo')
 const router = Router()
 
 // Получение списка задач
 router.get('/', (req, res) => {
-    res.json({a:1})
+    
 })
 
 // Добавление задачи
